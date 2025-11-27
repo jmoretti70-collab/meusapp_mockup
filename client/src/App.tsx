@@ -16,6 +16,8 @@ import MeusProdutos from "./pages/MeusProdutos";
 import MeusServicos from "./pages/MeusServicos";
 import MinhaIA from "./pages/MinhaIA";
 import Tutorial from "./pages/Tutorial";
+import Cadastro from "./pages/Cadastro";
+import CalculadoraFrete from "./pages/CalculadoraFrete";
 import MinhaEscola from "./pages/MinhaEscola";
 import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/servicos" component={MeusServicos} />
       <Route path="/ia" component={MinhaIA} />
       <Route path="/tutorial" component={Tutorial} />
+      <Route path="/cadastro" component={Cadastro} />
+      <Route path="/calculadora" component={CalculadoraFrete} />
       <Route path="/escola" component={MinhaEscola} />
       <Route path="/saude" component={MinhaSaude} />
       <Route path="/rede" component={MinhaRede} />

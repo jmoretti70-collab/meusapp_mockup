@@ -56,7 +56,7 @@ export default function Onboarding() {
             </Button>
             <div className="text-center">
               <span className="text-xs text-muted-foreground">
-                Primeira vez? <strong className="text-primary cursor-pointer">Cadastre-se grátis</strong>
+                Primeira vez? <strong className="text-primary cursor-pointer" onClick={() => setLocation("/cadastro")}>Cadastre-se grátis</strong>
               </span>
             </div>
           </div>

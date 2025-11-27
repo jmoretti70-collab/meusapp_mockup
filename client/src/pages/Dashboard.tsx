@@ -76,7 +76,7 @@ export default function Dashboard() {
                 <div className="w-14 h-14 bg-card rounded-2xl shadow-sm flex items-center justify-center text-secondary hover:bg-secondary/10 transition"><Tag className="w-6 h-6" /></div>
                 <span className="text-[10px] font-bold text-foreground">Ofertas</span>
               </button>
-              <button className="flex flex-col items-center gap-2">
+              <button className="flex flex-col items-center gap-2" onClick={() => setLocation("/calculadora")}>
                 <div className="w-14 h-14 bg-card rounded-2xl shadow-sm flex items-center justify-center text-green-600 hover:bg-green-50 transition"><Calculator className="w-6 h-6" /></div>
                 <span className="text-[10px] font-bold text-foreground">Custos</span>
               </button>
