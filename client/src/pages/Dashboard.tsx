@@ -1,7 +1,7 @@
 import { useLocation } from "wouter";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import BottomNav from "@/components/layout/BottomNav";
-import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings, Moon, Sun, HelpCircle } from "lucide-react";
+import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings, Moon, Sun, HelpCircle, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
 
@@ -79,6 +79,10 @@ export default function Dashboard() {
               <button className="flex flex-col items-center gap-2" onClick={() => setLocation("/calculadora")}>
                 <div className="w-14 h-14 bg-card rounded-2xl shadow-sm flex items-center justify-center text-green-600 hover:bg-green-50 transition"><Calculator className="w-6 h-6" /></div>
                 <span className="text-[10px] font-bold text-foreground">Custos</span>
+              </button>
+              <button onClick={() => setLocation("/clima")} className="flex flex-col items-center gap-2">
+                <div className="w-14 h-14 bg-card rounded-2xl shadow-sm flex items-center justify-center text-cyan-600 hover:bg-cyan-50 transition"><Cloud className="w-6 h-6" /></div>
+                <span className="text-[10px] font-bold text-foreground">Clima</span>
               </button>
               <button className="flex flex-col items-center gap-2">
                 <div className="w-14 h-14 bg-card rounded-2xl shadow-sm flex items-center justify-center text-red-600 hover:bg-red-50 transition"><AlertTriangle className="w-6 h-6" /></div>

@@ -21,6 +21,9 @@ import CalculadoraFrete from "./pages/CalculadoraFrete";
 import HistoricoFretes from "./pages/HistoricoFretes";
 import FreteChat from "./pages/FreteChat";
 import PainelAnalise from "./pages/PainelAnalise";
+import RastreamentoGPS from "./pages/RastreamentoGPS";
+import AvaliarFrete from "./pages/AvaliarFrete";
+import ClimaRota from "./pages/ClimaRota";
 import MinhaEscola from "./pages/MinhaEscola";
 import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
@@ -46,6 +49,9 @@ function Router() {
       <Route path="/historico" component={HistoricoFretes} />
       <Route path="/fretes/:id/chat" component={FreteChat} />
       <Route path="/analise" component={PainelAnalise} />
+      <Route path="/rastreamento/:id" component={RastreamentoGPS} />
+      <Route path="/avaliar/:id" component={AvaliarFrete} />
+      <Route path="/clima" component={ClimaRota} />
       <Route path="/escola" component={MinhaEscola} />
       <Route path="/saude" component={MinhaSaude} />
       <Route path="/rede" component={MinhaRede} />

@@ -189,7 +189,7 @@ export default function HistoricoFretes() {
                   {/* Card */}
                   <div 
                     className="bg-card border border-border rounded-xl p-4 cursor-pointer hover:shadow-md transition"
-                    onClick={() => frete.status === "em_andamento" && setLocation(`/fretes/${frete.id}/chat`)}
+                    onClick={() => frete.status === "em_andamento" && setLocation(`/rastreamento/${frete.id}`)}
                   >
                     <div className="flex items-start justify-between mb-2">
                       <div className="flex-1">
