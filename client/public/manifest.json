@@ -1,0 +1,23 @@
+{
+  "name": "Meus App - Sistema Operacional do Caminhoneiro",
+  "short_name": "Meus App",
+  "description": "Super App completo para profissionais da logística rodoviária",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0055A4",
+  "theme_color": "#0055A4",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo_meus_app_proposta_1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "logistics"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

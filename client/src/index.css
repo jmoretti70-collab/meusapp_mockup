@@ -164,6 +164,37 @@
   }
   
   /* Estilos customizados para o mockup do app */
+  /* Animações de transição entre páginas */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .animate-slide {
+    animation: slideInRight 0.3s ease-out;
+  }
+
   .phone-frame {
     width: 375px;
     height: 812px;

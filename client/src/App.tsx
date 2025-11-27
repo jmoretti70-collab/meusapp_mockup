@@ -14,6 +14,7 @@ import MeusFretes from "./pages/MeusFretes";
 import MeuFinanceiro from "./pages/MeuFinanceiro";
 import MeusProdutos from "./pages/MeusProdutos";
 import MeusServicos from "./pages/MeusServicos";
+import MinhaIA from "./pages/MinhaIA";
 import MinhaEscola from "./pages/MinhaEscola";
 import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/financeiro" component={MeuFinanceiro} />
       <Route path="/produtos" component={MeusProdutos} />
       <Route path="/servicos" component={MeusServicos} />
+      <Route path="/ia" component={MinhaIA} />
       <Route path="/escola" component={MinhaEscola} />
       <Route path="/saude" component={MinhaSaude} />
       <Route path="/rede" component={MinhaRede} />
@@ -44,7 +46,7 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="light" switchable>
         <TooltipProvider>
           <Toaster />
           <Router />

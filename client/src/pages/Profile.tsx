@@ -4,7 +4,7 @@ import BottomNav from "@/components/layout/BottomNav";
 import { 
   IdCard, TruckIcon, Gift, FileText, Shield, LogOut,
   Wallet, Heart, GraduationCap, Radio, Users, ShieldCheck,
-  BarChart3, Crown
+  BarChart3, Crown, Sparkles
 } from "lucide-react";
 
 export default function Profile() {
@@ -22,7 +22,7 @@ export default function Profile() {
     { icon: Heart, title: "Minha Saúde", desc: "Telemedicina 24/7", color: "bg-pink-50 text-pink-600", path: "/saude" },
     { icon: Radio, title: "Meu Rádio", desc: "Streaming ao vivo", color: "bg-cyan-50 text-cyan-600", path: "/profile" },
     { icon: Users, title: "Minha Rede", desc: "Comunidade", color: "bg-violet-50 text-violet-600", path: "/rede" },
-    { icon: Shield, title: "Segurança", desc: "Senha e biometria", color: "bg-gray-50 text-gray-600", path: "/profile" },
+    { icon: Sparkles, title: "Minha IA", desc: "Assistente LogIA", color: "bg-purple-50 text-purple-600", path: "/ia" },
   ];
 
   return (

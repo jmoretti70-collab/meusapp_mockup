@@ -1,11 +1,13 @@
 import { useLocation } from "wouter";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import BottomNav from "@/components/layout/BottomNav";
-import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings } from "lucide-react";
+import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "@/contexts/ThemeContext";
 
 export default function Dashboard() {
   const [, setLocation] = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <PhoneFrame>
@@ -15,10 +17,18 @@ export default function Dashboard() {
             <div className="text-sm opacity-80">Bom dia,</div>
             <div className="font-bold text-xl">João Motorista</div>
           </div>
-          <button className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center relative hover:bg-white/30">
-            <Bell className="w-5 h-5" />
-            <div className="absolute top-2 right-2 w-2 h-2 bg-secondary rounded-full"></div>
-          </button>
+          <div className="flex items-center gap-2">
+            <button 
+              onClick={toggleTheme}
+              className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30"
+            >
+              {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center relative hover:bg-white/30">
+              <Bell className="w-5 h-5" />
+              <div className="absolute top-2 right-2 w-2 h-2 bg-secondary rounded-full"></div>
+            </button>
+          </div>
         </div>
 
         <div className="flex-1 overflow-y-auto p-6 space-y-6">
