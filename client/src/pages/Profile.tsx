@@ -5,7 +5,7 @@ import { NotificationManager } from "@/components/NotificationManager";
 import { 
   IdCard, TruckIcon, Gift, FileText, Shield, LogOut,
   Wallet, Heart, GraduationCap, Radio, Users, ShieldCheck,
-  BarChart3, Crown, Sparkles
+  BarChart3, Crown, Sparkles, Clock, TrendingUp
 } from "lucide-react";
 
 export default function Profile() {
@@ -14,8 +14,10 @@ export default function Profile() {
   const modules = [
     { icon: IdCard, title: "Meus Dados", desc: "CNH, Endereço e Pix", color: "bg-blue-50 text-blue-600", path: "/profile" },
     { icon: TruckIcon, title: "Meus Veículos", desc: "Cadastrar ou editar", color: "bg-green-50 text-green-600", path: "/profile" },
+    { icon: Clock, title: "Histórico", desc: "Fretes anteriores", color: "bg-indigo-50 text-indigo-600", path: "/historico" },
     { icon: Wallet, title: "Meu Financeiro", desc: "Conta e extrato", color: "bg-purple-50 text-purple-600", path: "/financeiro" },
     { icon: BarChart3, title: "Meu Score", desc: "Ver pontuação", color: "bg-yellow-50 text-yellow-600", path: "/score" },
+    { icon: TrendingUp, title: "Análise", desc: "Desempenho e gráficos", color: "bg-purple-50 text-purple-600", path: "/analise" },
     { icon: Gift, title: "Meus Produtos", desc: "Marketplace", color: "bg-orange-50 text-orange-600", path: "/produtos" },
     { icon: FileText, title: "Meus Serviços", desc: "Oficinas e hotéis", color: "bg-indigo-50 text-indigo-600", path: "/servicos" },
     { icon: ShieldCheck, title: "Meus Seguros", desc: "Cotação e contrato", color: "bg-red-50 text-red-600", path: "/seguros" },

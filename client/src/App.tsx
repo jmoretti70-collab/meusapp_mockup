@@ -18,6 +18,9 @@ import MinhaIA from "./pages/MinhaIA";
 import Tutorial from "./pages/Tutorial";
 import Cadastro from "./pages/Cadastro";
 import CalculadoraFrete from "./pages/CalculadoraFrete";
+import HistoricoFretes from "./pages/HistoricoFretes";
+import FreteChat from "./pages/FreteChat";
+import PainelAnalise from "./pages/PainelAnalise";
 import MinhaEscola from "./pages/MinhaEscola";
 import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
@@ -40,6 +43,9 @@ function Router() {
       <Route path="/tutorial" component={Tutorial} />
       <Route path="/cadastro" component={Cadastro} />
       <Route path="/calculadora" component={CalculadoraFrete} />
+      <Route path="/historico" component={HistoricoFretes} />
+      <Route path="/fretes/:id/chat" component={FreteChat} />
+      <Route path="/analise" component={PainelAnalise} />
       <Route path="/escola" component={MinhaEscola} />
       <Route path="/saude" component={MinhaSaude} />
       <Route path="/rede" component={MinhaRede} />
