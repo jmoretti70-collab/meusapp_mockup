@@ -1,6 +1,7 @@
 import { useLocation } from "wouter";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import BottomNav from "@/components/layout/BottomNav";
+import { NotificationManager } from "@/components/NotificationManager";
 import { 
   IdCard, TruckIcon, Gift, FileText, Shield, LogOut,
   Wallet, Heart, GraduationCap, Radio, Users, ShieldCheck,
@@ -37,6 +38,9 @@ export default function Profile() {
           <div className="flex items-center justify-center gap-2 mt-2 opacity-90">
             <span className="text-xs bg-white/20 px-3 py-1 rounded-full">Scania R450</span>
             <span className="text-xs bg-white/20 px-3 py-1 rounded-full">RNTRC Ativo</span>
+          </div>
+          <div className="mt-3">
+            <NotificationManager />
           </div>
         </div>
 

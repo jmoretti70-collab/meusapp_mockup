@@ -1,7 +1,7 @@
 import { useLocation } from "wouter";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import BottomNav from "@/components/layout/BottomNav";
-import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings, Moon, Sun } from "lucide-react";
+import { Bell, Wallet, Truck, Tag, Calculator, AlertTriangle, Settings, Moon, Sun, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
 
@@ -18,6 +18,13 @@ export default function Dashboard() {
             <div className="font-bold text-xl">João Motorista</div>
           </div>
           <div className="flex items-center gap-2">
+            <button 
+              onClick={() => setLocation("/tutorial")}
+              className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30"
+              title="Tutorial"
+            >
+              <HelpCircle className="w-5 h-5" />
+            </button>
             <button 
               onClick={toggleTheme}
               className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30"
