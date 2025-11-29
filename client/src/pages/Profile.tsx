@@ -26,6 +26,7 @@ export default function Profile() {
     { icon: Radio, title: "Meu Rádio", desc: "Streaming ao vivo", color: "bg-cyan-50 text-cyan-600", path: "/profile" },
     { icon: Users, title: "Minha Rede", desc: "Comunidade", color: "bg-violet-50 text-violet-600", path: "/rede" },
     { icon: Sparkles, title: "Minha IA", desc: "Assistente LogIA", color: "bg-purple-50 text-purple-600", path: "/ia" },
+    { icon: Crown, title: "Indique e Ganhe", desc: "Compartilhe e ganhe bônus", color: "bg-amber-50 text-amber-600", path: "/indicacao" },
   ];
 
   return (

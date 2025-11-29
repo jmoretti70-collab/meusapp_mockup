@@ -28,6 +28,7 @@ import MinhaEscola from "./pages/MinhaEscola";
 import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
 import MeusSeguros from "./pages/MeusSeguros";
+import SistemaIndicacao from "./pages/SistemaIndicacao";
 
 function Router() {
   return (
@@ -56,6 +57,7 @@ function Router() {
       <Route path="/saude" component={MinhaSaude} />
       <Route path="/rede" component={MinhaRede} />
       <Route path="/seguros" component={MeusSeguros} />
+      <Route path="/indicacao" component={SistemaIndicacao} />
       <Route path="/demo" component={Home} />
     </Switch>
   );

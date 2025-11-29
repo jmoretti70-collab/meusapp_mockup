@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import PhoneFrame from "@/components/layout/PhoneFrame";
-import { ArrowLeft, Navigation, MapPin, Clock, Fuel, AlertTriangle, Phone, MessageCircle } from "lucide-react";
+import { ArrowLeft, Navigation, MapPin, Clock, Fuel, AlertTriangle, Phone, MessageCircle, MapIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 export default function RastreamentoGPS() {
   const [, setLocation] = useLocation();
@@ -152,6 +153,40 @@ export default function RastreamentoGPS() {
                 <span className="text-muted-foreground">Carga</span>
                 <span className="font-bold text-foreground">{frete.carga}</span>
               </div>
+            </div>
+          </div>
+
+          {/* Navigation Apps */}
+          <div className="bg-card border border-border rounded-xl p-4">
+            <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
+              <MapIcon className="w-5 h-5 text-primary" />
+              Abrir Navegação
+            </h3>
+            <div className="grid grid-cols-2 gap-3">
+              <Button 
+                variant="outline" 
+                className="h-12 text-xs"
+                onClick={() => {
+                  const wazeUrl = `https://waze.com/ul?ll=${-25.4284},-49.2733&navigate=yes`;
+                  window.open(wazeUrl, '_blank');
+                  toast.success('Abrindo Waze...');
+                }}
+              >
+                <MapIcon className="w-4 h-4 mr-1" />
+                Waze
+              </Button>
+              <Button 
+                variant="outline" 
+                className="h-12 text-xs"
+                onClick={() => {
+                  const googleMapsUrl = `https://maps.google.com/?q=-25.4284,-49.2733`;
+                  window.open(googleMapsUrl, '_blank');
+                  toast.success('Abrindo Google Maps...');
+                }}
+              >
+                <MapIcon className="w-4 h-4 mr-1" />
+                Google Maps
+              </Button>
             </div>
           </div>
 

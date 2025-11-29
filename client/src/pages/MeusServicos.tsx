@@ -34,8 +34,26 @@ export default function MeusServicos() {
           setLocationPermission("granted");
         },
         (error) => {
-          console.error("Erro ao obter localização:", error);
-          toast.error("Não foi possível obter sua localização");
+          toast.dismiss();
+          let errorMessage = "Não foi possível obter sua localização";
+          
+          switch(error.code) {
+            case error.PERMISSION_DENIED:
+              errorMessage = "Permissão de localização negada. Por favor, habilite nas configurações do navegador.";
+              setLocationPermission("denied");
+              break;
+            case error.POSITION_UNAVAILABLE:
+              errorMessage = "Localização indisponível no momento. Tente novamente.";
+              break;
+            case error.TIMEOUT:
+              errorMessage = "Tempo esgotado ao obter localização. Tente novamente.";
+              break;
+            default:
+              errorMessage = "Erro desconhecido ao obter localização.";
+          }
+          
+          toast.error(errorMessage);
+          console.error("Erro de geolocalização:", error.code, error.message);
         },
         {
           enableHighAccuracy: true,
