@@ -93,7 +93,7 @@ export default function FreteChat() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <div className="bg-primary pt-12 pb-4 px-6 text-primary-foreground">
           <div className="flex items-center justify-between mb-2">
@@ -130,7 +130,7 @@ export default function FreteChat() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-muted/20">
+        <div className="flex-1  p-4 space-y-3 bg-muted/20">
           {/* Date Divider */}
           <div className="flex justify-center">
             <div className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground">

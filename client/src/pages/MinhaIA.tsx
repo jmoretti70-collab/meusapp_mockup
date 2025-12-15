@@ -109,7 +109,7 @@ export default function MinhaIA() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <header className="bg-gradient-to-r from-purple-600 to-indigo-600 pt-14 pb-4 px-5 text-white">
           <div className="flex items-center gap-3">
@@ -151,7 +151,7 @@ export default function MinhaIA() {
         </div>
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4 custom-scrollbar">
+        <div className="flex-1  px-4 py-4 space-y-4 ">
           {messages.map((message) => (
             <div
               key={message.id}

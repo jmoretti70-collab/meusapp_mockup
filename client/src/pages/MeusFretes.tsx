@@ -124,7 +124,7 @@ export default function MeusFretes() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background">
         <PageHeader 
           title="Meus Fretes"
           subtitle="Leilão Reverso ANTT"
@@ -187,7 +187,7 @@ export default function MeusFretes() {
         </div>
 
         {/* Fretes List */}
-        <div className="flex-1 overflow-y-auto px-4 py-3 pb-24 space-y-3 custom-scrollbar">
+        <div className="flex-1 px-4 py-3 pb-24 space-y-3">
           {filteredFretes.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-12 text-center">
               <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mb-4">

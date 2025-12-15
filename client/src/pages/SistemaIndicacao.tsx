@@ -37,7 +37,7 @@ export default function SistemaIndicacao() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <div className="bg-gradient-to-r from-primary to-secondary pt-12 pb-6 px-6 text-primary-foreground relative z-10">
           <button onClick={() => setLocation("/profile")} className="mb-3">
@@ -53,7 +53,7 @@ export default function SistemaIndicacao() {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div className="flex-1  p-4 space-y-4">
           {/* Bonus Summary */}
           <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6">
             <div className="text-center">

@@ -36,7 +36,7 @@ export default function Login() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <div className="pt-14 px-5">
           <button 

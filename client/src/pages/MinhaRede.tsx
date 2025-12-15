@@ -139,7 +139,7 @@ export default function MinhaRede() {
         )}
 
         {/* Posts Feed */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-3">
+        <div className="flex-1  p-4 space-y-3">
           {posts.map((post, idx) => (
             <div key={idx} className={`bg-card border rounded-xl p-4 ${
               post.tipo === "conquista" ? "border-yellow-400 bg-yellow-50/50" : "border-border"

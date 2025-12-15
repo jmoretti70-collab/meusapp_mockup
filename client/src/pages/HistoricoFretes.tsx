@@ -170,7 +170,7 @@ export default function HistoricoFretes() {
         </div>
 
         {/* Timeline */}
-        <div className="flex-1 overflow-y-auto px-4 pb-4">
+        <div className="flex-1  px-4 pb-4">
           <div className="relative">
             {/* Vertical Line */}
             <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-border"></div>

@@ -63,7 +63,7 @@ export default function Dashboard() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <header className="bg-gradient-to-br from-primary via-primary to-primary/90 pt-14 pb-8 px-5 rounded-b-3xl text-primary-foreground relative overflow-hidden">
           {/* Background Pattern */}
@@ -153,7 +153,7 @@ export default function Dashboard() {
         </header>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto px-5 py-4 pb-24 space-y-6 custom-scrollbar">
+        <div className="flex-1 px-5 py-4 space-y-6">
           {/* Quick Actions */}
           <section>
             <h2 className="text-sm font-bold text-foreground mb-3">Atalhos Rápidos</h2>

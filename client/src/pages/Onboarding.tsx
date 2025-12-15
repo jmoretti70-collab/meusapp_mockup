@@ -8,7 +8,7 @@ export default function Onboarding() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <div className="h-[55%] relative bg-gradient-to-br from-primary to-primary/80 overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1000')] bg-cover bg-center opacity-30"></div>
           <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent"></div>

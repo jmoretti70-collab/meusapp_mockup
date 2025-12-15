@@ -36,10 +36,10 @@ export default function MeuScore() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader title="Meu Score" subtitle="Sua pontuação de confiança" backPath="/profile" variant="gradient" />
 
-        <div className="flex-1 overflow-y-auto px-4 py-4 pb-24 custom-scrollbar">
+        <div className="flex-1  px-4 py-4 pb-24 ">
           {/* Score Card */}
           <div className="bg-card rounded-2xl p-6 shadow-lg border border-border/50 mb-4">
             <div className="flex items-center justify-between mb-4">

@@ -14,7 +14,7 @@ export default function BottomNav() {
   const [location, setLocation] = useLocation();
 
   return (
-    <nav className="absolute bottom-0 left-0 right-0 h-20 bg-card/95 backdrop-blur-lg border-t border-border/50 flex items-center justify-around px-2 pb-4 z-50">
+    <nav className="fixed bottom-0 left-0 right-0 h-20 bg-card/95 backdrop-blur-lg border-t border-border/50 flex items-center justify-around px-2 pb-4 z-[60]" style={{ maxWidth: '375px', margin: '0 auto' }}>
       {navItems.map((item) => {
         const Icon = item.icon;
         const isActive = location === item.path || 

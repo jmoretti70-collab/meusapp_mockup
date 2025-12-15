@@ -69,7 +69,7 @@ export default function CalculadoraFrete() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-6 space-y-4">
+        <div className="flex-1  p-6 space-y-4">
           <div className="bg-card border border-border rounded-xl p-4">
             <h3 className="font-bold text-foreground mb-4 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />

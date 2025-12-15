@@ -33,7 +33,7 @@ export default function MinhaSaude() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader title="Minha Saúde" subtitle="Cuide de você" backPath="/profile" variant="gradient" />
 
         {/* Emergency Banner */}
@@ -52,7 +52,7 @@ export default function MinhaSaude() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-4 py-4 pb-24 space-y-6 custom-scrollbar">
+        <div className="flex-1  px-4 py-4 pb-24 space-y-6 ">
           {/* Services */}
           <section>
             <h3 className="text-sm font-bold text-foreground mb-3">Serviços de Saúde</h3>

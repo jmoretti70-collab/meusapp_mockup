@@ -33,7 +33,7 @@ export default function RastreamentoGPS() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Header */}
         <div className="bg-primary pt-12 pb-4 px-6 text-primary-foreground relative z-10">
           <button onClick={() => setLocation("/historico")} className="mb-3">
@@ -129,7 +129,7 @@ export default function RastreamentoGPS() {
         </div>
 
         {/* Trip Details */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-3">
+        <div className="flex-1  p-4 space-y-3">
           <div className="bg-card border border-border rounded-xl p-4">
             <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />

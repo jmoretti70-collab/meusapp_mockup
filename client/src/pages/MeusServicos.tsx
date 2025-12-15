@@ -60,7 +60,7 @@ export default function MeusServicos() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader title="Meus Serviços" subtitle="Encontre serviços próximos" backPath="/profile" variant="gradient" />
 
         <div className="px-4 py-3 bg-card border-b border-border/50">
@@ -84,7 +84,7 @@ export default function MeusServicos() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-4 py-3 pb-24 space-y-3 custom-scrollbar">
+        <div className="flex-1  px-4 py-3 pb-24 space-y-3 ">
           {filteredServices.map((service) => {
             const Icon = getIcon(service.category);
             return (

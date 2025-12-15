@@ -135,7 +135,7 @@ export default function Profile() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         {/* Profile Header */}
         <header className="bg-gradient-to-br from-primary via-primary to-primary/90 pt-14 pb-12 px-5 rounded-b-3xl text-primary-foreground relative overflow-hidden">
           {/* Background Pattern */}
@@ -198,7 +198,7 @@ export default function Profile() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto px-5 py-4 pb-24 custom-scrollbar">
+        <div className="flex-1 px-5 py-4">
           {/* Settings Button */}
           <button 
             className="w-full app-card flex items-center gap-3 mb-4"

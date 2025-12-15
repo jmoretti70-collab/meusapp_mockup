@@ -85,7 +85,7 @@ export default function Cadastro() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <div className="bg-primary pt-12 pb-6 px-6 text-primary-foreground">
           <button onClick={() => step === 1 ? setLocation("/login") : setStep(step - 1)} className="mb-4">
             <ArrowLeft className="w-6 h-6" />
@@ -106,7 +106,7 @@ export default function Cadastro() {
           ))}
         </div>
 
-        <div className="flex-1 overflow-y-auto px-6 pb-6">
+        <div className="flex-1  px-6 pb-6">
           {step === 1 && (
             <div className="space-y-4">
               <h2 className="font-bold text-lg text-foreground mb-4">Dados Pessoais</h2>

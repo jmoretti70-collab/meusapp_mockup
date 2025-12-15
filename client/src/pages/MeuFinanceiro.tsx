@@ -52,7 +52,7 @@ export default function MeuFinanceiro() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader 
           title="Meu Financeiro"
           subtitle="Gerencie suas finanças"
@@ -169,7 +169,7 @@ export default function MeuFinanceiro() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 pb-24 custom-scrollbar">
+        <div className="flex-1  px-4 py-4 pb-24 ">
           {activeTab === "extrato" && (
             <div className="space-y-3">
               <div className="flex items-center justify-between mb-2">

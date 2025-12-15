@@ -41,7 +41,7 @@ export default function MinhaEscola() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader title="Minha Escola" subtitle="Aprenda e evolua" backPath="/profile" variant="gradient" />
 
         {/* Stats */}
@@ -78,7 +78,7 @@ export default function MinhaEscola() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-4 pb-24 space-y-3 custom-scrollbar">
+        <div className="flex-1  px-4 pb-24 space-y-3 ">
           {activeTab === "cursos" && courses.map((course) => (
             <div key={course.id} className={cn("app-card", course.locked && "opacity-60")}>
               <div className="flex items-start gap-3">

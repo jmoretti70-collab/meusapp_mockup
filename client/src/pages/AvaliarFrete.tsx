@@ -49,7 +49,7 @@ export default function AvaliarFrete() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <div className="bg-gradient-to-br from-yellow-500 to-orange-500 pt-12 pb-6 px-6 text-white">
           <button onClick={() => setLocation("/historico")} className="mb-4">
             <ArrowLeft className="w-6 h-6" />
@@ -63,7 +63,7 @@ export default function AvaliarFrete() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-6 space-y-6">
+        <div className="flex-1  p-6 space-y-6">
           {/* Frete Info */}
           <div className="bg-card border border-border rounded-xl p-4">
             <div className="text-sm text-muted-foreground mb-2">Frete concluído</div>

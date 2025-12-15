@@ -65,7 +65,7 @@ export default function MeusProdutos() {
 
   return (
     <PhoneFrame>
-      <div className="h-full flex flex-col bg-background">
+      <div className="min-h-full flex flex-col bg-background pb-24">
         <PageHeader 
           title="Meus Produtos"
           subtitle="Marketplace exclusivo"
@@ -104,7 +104,7 @@ export default function MeusProdutos() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-4 pb-24 custom-scrollbar">
+        <div className="flex-1  px-4 pb-24 ">
           <div className="flex items-center justify-between mb-3">
             <p className="text-sm text-muted-foreground"><strong className="text-foreground">{filteredProducts.length}</strong> produtos</p>
             <button className="flex items-center gap-1 text-xs text-primary font-medium"><Filter className="w-3 h-3" /> Filtrar</button>
