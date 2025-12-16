@@ -22,7 +22,7 @@ export default function Profile() {
       desc: "CNH, Endereço e Pix", 
       iconBg: "bg-blue-100", 
       iconColor: "text-blue-600", 
-      path: "/cadastro" 
+      path: "/meus-dados" 
     },
     { 
       icon: TruckIcon, 
@@ -30,7 +30,7 @@ export default function Profile() {
       desc: "Cadastrar ou editar", 
       iconBg: "bg-green-100", 
       iconColor: "text-green-600", 
-      path: "/cadastro",
+      path: "/meus-veiculos",
       badge: "2"
     },
     { 

@@ -29,6 +29,8 @@ import MinhaSaude from "./pages/MinhaSaude";
 import MinhaRede from "./pages/MinhaRede";
 import MeusSeguros from "./pages/MeusSeguros";
 import SistemaIndicacao from "./pages/SistemaIndicacao";
+import MeusDados from "./pages/MeusDados";
+import MeusVeiculos from "./pages/MeusVeiculos";
 
 function Router() {
   return (
@@ -58,6 +60,8 @@ function Router() {
       <Route path="/rede" component={MinhaRede} />
       <Route path="/seguros" component={MeusSeguros} />
       <Route path="/indicacao" component={SistemaIndicacao} />
+      <Route path="/meus-dados" component={MeusDados} />
+      <Route path="/meus-veiculos" component={MeusVeiculos} />
       <Route path="/demo" component={Home} />
     </Switch>
   );
