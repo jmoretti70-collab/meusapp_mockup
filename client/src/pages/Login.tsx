@@ -30,7 +30,7 @@ export default function Login() {
     setTimeout(() => {
       setIsLoading(false);
       toast.success("Bem-vindo!", { description: "Login realizado com sucesso" });
-      setLocation("/dashboard");
+      setLocation("/profile");
     }, 1500);
   };
 

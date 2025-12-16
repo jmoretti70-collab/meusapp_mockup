@@ -14,7 +14,16 @@ export default function BottomNav() {
   const [location, setLocation] = useLocation();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 h-20 bg-card/95 backdrop-blur-lg border-t border-border/50 flex items-center justify-around px-2 pb-4 z-[60]" style={{ maxWidth: '375px', margin: '0 auto' }}>
+    <nav 
+      className="absolute bottom-0 left-0 right-0 bg-card border-t border-border/50 flex items-center justify-around px-2 z-[90]"
+      style={{
+        height: '80px',
+        paddingBottom: '20px',
+        background: 'linear-gradient(to top, var(--card) 85%, transparent)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+      }}
+    >
       {navItems.map((item) => {
         const Icon = item.icon;
         const isActive = location === item.path || 
@@ -26,7 +35,7 @@ export default function BottomNav() {
             <button
               key={item.path}
               onClick={() => setLocation(item.path)}
-              className="relative -mt-6"
+              className="relative -mt-6 flex flex-col items-center"
               aria-label={item.label}
             >
               <div className={cn(
@@ -52,9 +61,10 @@ export default function BottomNav() {
             key={item.path}
             onClick={() => setLocation(item.path)}
             className={cn(
-              "flex flex-col items-center gap-1 py-2 px-3 rounded-xl transition-all duration-200 tap-highlight-none",
+              "flex flex-col items-center gap-1 py-2 px-3 rounded-xl transition-all duration-200",
               isActive && "bg-primary/10"
             )}
+            style={{ WebkitTapHighlightColor: 'transparent' }}
             aria-label={item.label}
             aria-current={isActive ? "page" : undefined}
           >
